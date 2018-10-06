@@ -1,9 +1,11 @@
 package steps;
 
+import cucumber.api.PendingException;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import hooks.Hooks;
+import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import pages.GoogleHomePage;
 import pages.SearchResultsPage;
@@ -30,4 +32,6 @@ public class SearchSteps {
     public void checkTitle(String titleStartsWith) {
         searchResultsPage.waitTillTitleIs(titleStartsWith);
     }
+
+
 }
