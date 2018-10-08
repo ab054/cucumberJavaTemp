@@ -16,4 +16,7 @@ public class YahooHomePage {
         driver.get(baseURL);
     }
 
+    public void searchFor(String searchParam) {
+        System.out.println(searchParam);
+    }
 }
